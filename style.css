@@ -1,0 +1,39 @@
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+    display: flex;
+}
+
+.game-board button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+
+    background-color: grey;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
