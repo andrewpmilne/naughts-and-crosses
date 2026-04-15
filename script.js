@@ -14,6 +14,7 @@ updatePlayerText();
 
 function updatePlayerText() {
     playerSpan.textContent = currentPlayer;
+    playerSpan.style.color = currentPlayer;
 }
 
 function startNewGame() {

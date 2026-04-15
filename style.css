@@ -1,14 +1,41 @@
+body {
+    background-image: url("western.png");
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;  
+    min-height: 100vh;             
+}
+
+h1 {
+  font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 7rem;
+  color: rgb(10, 52, 10);
+}
 
 .controls {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
 }
 
 .controls button {
-    padding: 8px 12px;
+    padding: 12px 20px;
+    font-size: 3rem;
     cursor: pointer;
+}
+
+.controls p {
+    font-size: 4rem;
+    color: rgb(10, 52, 10);
+}
+
+.player {
+    color: red;
 }
 
 .game-board {
@@ -26,8 +53,8 @@
 }
 
 .game-board button {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     margin: 5px;
 
     background-color: grey;
