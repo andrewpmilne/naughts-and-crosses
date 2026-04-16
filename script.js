@@ -26,7 +26,7 @@ function startNewGame() {
     currentPlayer = "red";
 
     buttons.forEach(button => {
-        button.style.backgroundColor = "grey";
+        button.classList.remove("red", "blue");
     });
 
     updatePlayerText();
@@ -54,11 +54,12 @@ function checkWinner() {
 
 function handleClick(button, index) {
 
-    if (button.style.backgroundColor !== "grey" && button.style.backgroundColor !== "") {
+    if (board[index] !== "") {
         return;
     }
 
-    button.style.backgroundColor = currentPlayer;
+    // button.style.backgroundColor = currentPlayer;
+    button.classList.add(currentPlayer);
 
     board[index] = currentPlayer;
 
